@@ -1,4 +1,9 @@
-package hu.imosonyi.sshmanager.store.portforwarding;
+package hu.imosonyi.sshmanager.manager.connection;
+
+import hu.imosonyi.sshmanager.store.portforwarding.DynamicPortForwarding;
+import hu.imosonyi.sshmanager.store.portforwarding.LocalPortForwarding;
+import hu.imosonyi.sshmanager.store.portforwarding.PortForwarding;
+import hu.imosonyi.sshmanager.store.portforwarding.RemotePortForwarding;
 
 import static java.util.stream.Stream.of;
 
