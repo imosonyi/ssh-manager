@@ -1,29 +1,15 @@
 package hu.imosonyi.sshmanager.store.portforwarding.configuration;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document("SECURITY_CONFIGURATION")
 public class SecurityConfiguration {
 
-    @Id
-    @Field("ID")
-    private String id;
     @Field("SSH_KEY")
     private String sshKey;
     @Field("STORE_CREDENTIALS")
     private Boolean storeCredentials;
     @Field("PASSPHRASE")
     private String passphrase;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getSshKey() {
         return sshKey;
@@ -52,7 +38,6 @@ public class SecurityConfiguration {
     @Override
     public String toString() {
         return "SecurityConfiguration{" +
-                "id='" + id + '\'' +
                 ", sshKey='" + sshKey + '\'' +
                 ", storeCredentials=" + storeCredentials +
                 '}';

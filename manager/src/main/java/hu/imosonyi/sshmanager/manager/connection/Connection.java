@@ -2,17 +2,17 @@ package hu.imosonyi.sshmanager.manager.connection;
 
 public class Connection {
 
-    private Long id;
+    private String id;
     private String name;
     private ConnectionStatus status;
     private ConnectionType type;
     private Boolean passphraseRequired;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

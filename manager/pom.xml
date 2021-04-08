@@ -24,6 +24,7 @@
             <groupId>hu.imosonyi.ssh-manager</groupId>
             <artifactId>store</artifactId>
             <version>1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>

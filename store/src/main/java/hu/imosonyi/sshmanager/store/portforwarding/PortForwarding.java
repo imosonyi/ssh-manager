@@ -13,9 +13,9 @@ public abstract class PortForwarding {
     protected String id;
     @Field("NAME")
     protected String name;
-    @DBRef
+    @Field("COMMON_CONFIGURATION")
     private CommonConfiguration commonConfiguration;
-    @DBRef
+    @Field("SECURITY_CONFIGURATION")
     private SecurityConfiguration securityConfiguration;
 
     public String getId() {
